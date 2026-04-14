@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Workspace root for fncsv",
+  "scripts": {
+    "build": "pnpm --filter fncsv build",
+    "test": "pnpm --filter fncsv-tests test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "packageManager": "pnpm@10.17.0",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

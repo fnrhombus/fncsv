@@ -1,0 +1,27 @@
+{
+  "name": "fncsv",
+  "version": "0.1.0",
+  "description": "JSON to CSV and back. TypeScript-first, RFC 4180 compliant, zero dependencies.",
+  "keywords": ["csv", "json", "json-to-csv", "csv-to-json", "json2csv", "convert", "export", "parse"],
+  "license": "MIT",
+  "author": "fnrhombus",
+  "repository": { "type": "git", "url": "https://github.com/fnrhombus/fncsv" },
+  "bugs": { "url": "https://github.com/fnrhombus/fncsv/issues" },
+  "homepage": "https://github.com/fnrhombus/fncsv#readme",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "engines": { "node": ">=20" },
+  "publishConfig": { "access": "public" },
+  "scripts": { "build": "tsup" },
+  "devDependencies": { "tsup": "^8.3.0", "typescript": "^5.6.0" }
+}

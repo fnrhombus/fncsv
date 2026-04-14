@@ -1,0 +1,14 @@
+{
+  "name": "fncsv-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  },
+  "dependencies": {
+    "fncsv": "workspace:*"
+  }
+}
